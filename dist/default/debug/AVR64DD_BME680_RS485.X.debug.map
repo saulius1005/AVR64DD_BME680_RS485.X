@@ -125,8 +125,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/debug/BME680.o
  .data          0x0000000000000000        0x0 build/default/debug/BME680.o
  .bss           0x0000000000000000        0x0 build/default/debug/BME680.o
- .text.BME680_exchange_data_simple
-                0x0000000000000000        0x2 build/default/debug/BME680.o
  .text.BME680_change_page
                 0x0000000000000000        0x2 build/default/debug/BME680.o
  .text.BME680_read_ID
@@ -1152,84 +1150,84 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x1e8
+.debug_aranges  0x0000000000000000      0x1e0
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0xf0 build/default/debug/BME680.o
+                0x0000000000000000       0xe8 build/default/debug/BME680.o
  .debug_aranges
-                0x00000000000000f0       0x20 build/default/debug/main.o
+                0x00000000000000e8       0x20 build/default/debug/main.o
  .debug_aranges
-                0x0000000000000110       0x30 build/default/debug/SPI.o
+                0x0000000000000108       0x30 build/default/debug/SPI.o
  .debug_aranges
-                0x0000000000000140       0x40 build/default/debug/USART.o
+                0x0000000000000138       0x40 build/default/debug/USART.o
  .debug_aranges
-                0x0000000000000180       0x28 build/default/debug/CLK.o
+                0x0000000000000178       0x28 build/default/debug/CLK.o
  .debug_aranges
-                0x00000000000001a8       0x20 build/default/debug/GPIO.o
+                0x00000000000001a0       0x20 build/default/debug/GPIO.o
  .debug_aranges
-                0x00000000000001c8       0x20 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+                0x00000000000001c0       0x20 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x13bf1
+.debug_info     0x0000000000000000    0x13ba6
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x2057 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_info    0x0000000000002057     0x8591 build/default/debug/BME680.o
- .debug_info    0x000000000000a5e8     0x76d8 build/default/debug/main.o
- .debug_info    0x0000000000011cc0      0x4b1 build/default/debug/SPI.o
- .debug_info    0x0000000000012171      0x89a build/default/debug/USART.o
- .debug_info    0x0000000000012a0b      0x930 build/default/debug/CLK.o
- .debug_info    0x000000000001333b      0x7f2 build/default/debug/GPIO.o
- .debug_info    0x0000000000013b2d       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+ .debug_info    0x0000000000002057     0x8546 build/default/debug/BME680.o
+ .debug_info    0x000000000000a59d     0x76d8 build/default/debug/main.o
+ .debug_info    0x0000000000011c75      0x4b1 build/default/debug/SPI.o
+ .debug_info    0x0000000000012126      0x89a build/default/debug/USART.o
+ .debug_info    0x00000000000129c0      0x930 build/default/debug/CLK.o
+ .debug_info    0x00000000000132f0      0x7f2 build/default/debug/GPIO.o
+ .debug_info    0x0000000000013ae2       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
-.debug_abbrev   0x0000000000000000     0x2646
+.debug_abbrev   0x0000000000000000     0x2637
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x1ea0 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_abbrev  0x0000000000001ea0      0x1fa build/default/debug/BME680.o
- .debug_abbrev  0x000000000000209a      0x179 build/default/debug/main.o
- .debug_abbrev  0x0000000000002213       0xe5 build/default/debug/SPI.o
- .debug_abbrev  0x00000000000022f8      0x1af build/default/debug/USART.o
- .debug_abbrev  0x00000000000024a7       0xda build/default/debug/CLK.o
- .debug_abbrev  0x0000000000002581       0xb1 build/default/debug/GPIO.o
- .debug_abbrev  0x0000000000002632       0x14 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+ .debug_abbrev  0x0000000000001ea0      0x1eb build/default/debug/BME680.o
+ .debug_abbrev  0x000000000000208b      0x179 build/default/debug/main.o
+ .debug_abbrev  0x0000000000002204       0xe5 build/default/debug/SPI.o
+ .debug_abbrev  0x00000000000022e9      0x1af build/default/debug/USART.o
+ .debug_abbrev  0x0000000000002498       0xda build/default/debug/CLK.o
+ .debug_abbrev  0x0000000000002572       0xb1 build/default/debug/GPIO.o
+ .debug_abbrev  0x0000000000002623       0x14 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
-.debug_line     0x0000000000000000      0xd25
+.debug_line     0x0000000000000000      0xd0f
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x1aa C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_line    0x00000000000001aa      0x364 build/default/debug/BME680.o
- .debug_line    0x000000000000050e      0x1b1 build/default/debug/main.o
- .debug_line    0x00000000000006bf      0x157 build/default/debug/SPI.o
- .debug_line    0x0000000000000816      0x1f5 build/default/debug/USART.o
- .debug_line    0x0000000000000a0b      0x18d build/default/debug/CLK.o
- .debug_line    0x0000000000000b98      0x120 build/default/debug/GPIO.o
- .debug_line    0x0000000000000cb8       0x6d C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+ .debug_line    0x00000000000001aa      0x34e build/default/debug/BME680.o
+ .debug_line    0x00000000000004f8      0x1b1 build/default/debug/main.o
+ .debug_line    0x00000000000006a9      0x157 build/default/debug/SPI.o
+ .debug_line    0x0000000000000800      0x1f5 build/default/debug/USART.o
+ .debug_line    0x00000000000009f5      0x18d build/default/debug/CLK.o
+ .debug_line    0x0000000000000b82      0x120 build/default/debug/GPIO.o
+ .debug_line    0x0000000000000ca2       0x6d C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
-.debug_frame    0x0000000000000000      0x364
+.debug_frame    0x0000000000000000      0x354
  *(.debug_frame)
- .debug_frame   0x0000000000000000      0x1f8 build/default/debug/BME680.o
- .debug_frame   0x00000000000001f8       0x3c build/default/debug/main.o
- .debug_frame   0x0000000000000234       0x44 build/default/debug/SPI.o
- .debug_frame   0x0000000000000278       0x94 build/default/debug/USART.o
- .debug_frame   0x000000000000030c       0x34 build/default/debug/CLK.o
- .debug_frame   0x0000000000000340       0x24 build/default/debug/GPIO.o
+ .debug_frame   0x0000000000000000      0x1e8 build/default/debug/BME680.o
+ .debug_frame   0x00000000000001e8       0x3c build/default/debug/main.o
+ .debug_frame   0x0000000000000224       0x44 build/default/debug/SPI.o
+ .debug_frame   0x0000000000000268       0x94 build/default/debug/USART.o
+ .debug_frame   0x00000000000002fc       0x34 build/default/debug/CLK.o
+ .debug_frame   0x0000000000000330       0x24 build/default/debug/GPIO.o
 
-.debug_str      0x0000000000000000      0xe80
+.debug_str      0x0000000000000000      0xe76
  *(.debug_str)
  .debug_str     0x0000000000000000      0xdcd C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_str     0x0000000000000dcd       0x2f build/default/debug/BME680.o
- .debug_str     0x0000000000000dfc       0x57 build/default/debug/main.o
- .debug_str     0x0000000000000e53        0x0 build/default/debug/SPI.o
- .debug_str     0x0000000000000e53        0xa build/default/debug/USART.o
- .debug_str     0x0000000000000e5d        0xd build/default/debug/CLK.o
- .debug_str     0x0000000000000e6a       0x16 build/default/debug/GPIO.o
+ .debug_str     0x0000000000000dcd       0x25 build/default/debug/BME680.o
+ .debug_str     0x0000000000000df2       0x57 build/default/debug/main.o
+ .debug_str     0x0000000000000e49        0x0 build/default/debug/SPI.o
+ .debug_str     0x0000000000000e49        0xa build/default/debug/USART.o
+ .debug_str     0x0000000000000e53        0xd build/default/debug/CLK.o
+ .debug_str     0x0000000000000e60       0x16 build/default/debug/GPIO.o
 
-.debug_loc      0x0000000000000000      0x2ba
+.debug_loc      0x0000000000000000      0x28e
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x19a build/default/debug/BME680.o
- .debug_loc     0x000000000000019a       0x2a build/default/debug/main.o
- .debug_loc     0x00000000000001c4       0x4e build/default/debug/SPI.o
- .debug_loc     0x0000000000000212       0xa8 build/default/debug/USART.o
+ .debug_loc     0x0000000000000000      0x16e build/default/debug/BME680.o
+ .debug_loc     0x000000000000016e       0x2a build/default/debug/main.o
+ .debug_loc     0x0000000000000198       0x4e build/default/debug/SPI.o
+ .debug_loc     0x00000000000001e6       0xa8 build/default/debug/USART.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1249,14 +1247,14 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x168
+.debug_ranges   0x0000000000000000      0x160
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0xe0 build/default/debug/BME680.o
- .debug_ranges  0x00000000000000e0       0x10 build/default/debug/main.o
- .debug_ranges  0x00000000000000f0       0x20 build/default/debug/SPI.o
- .debug_ranges  0x0000000000000110       0x30 build/default/debug/USART.o
- .debug_ranges  0x0000000000000140       0x18 build/default/debug/CLK.o
- .debug_ranges  0x0000000000000158       0x10 build/default/debug/GPIO.o
+ .debug_ranges  0x0000000000000000       0xd8 build/default/debug/BME680.o
+ .debug_ranges  0x00000000000000d8       0x10 build/default/debug/main.o
+ .debug_ranges  0x00000000000000e8       0x20 build/default/debug/SPI.o
+ .debug_ranges  0x0000000000000108       0x30 build/default/debug/USART.o
+ .debug_ranges  0x0000000000000138       0x18 build/default/debug/CLK.o
+ .debug_ranges  0x0000000000000150       0x10 build/default/debug/GPIO.o
 
 .debug_macro
  *(.debug_macro)

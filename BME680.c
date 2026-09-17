@@ -34,9 +34,9 @@ uint32_t BME680_exchange_data(uint32_t cmd, uint8_t tx_length, bool send_dummy){
     return ui8b_to_32b(aswbuf);//return uin32_t value
 }
 
-uint32_t BME680_exchange_data_simple(uint32_t cmd, uint8_t tx_length){
+/*uint32_t BME680_exchange_data_simple(uint32_t cmd, uint8_t tx_length){
    
-  /*  uint32_t rx = 0;
+    uint32_t rx = 0;
     BME680_CS_LOW();
     SERCOM4_REGS->SPIM.SERCOM_LENGTH = SERCOM_SPIM_LENGTH_LEN(tx_length) | SERCOM_SPIM_LENGTH_LENEN_Msk; // all time +1 of dummy
     while (SERCOM4_REGS->SPIM.SERCOM_SYNCBUSY & SERCOM_SPIM_SYNCBUSY_LENGTH_Msk);
@@ -47,8 +47,8 @@ uint32_t BME680_exchange_data_simple(uint32_t cmd, uint8_t tx_length){
     rx = SERCOM4_REGS->SPIM.SERCOM_DATA;   
     BME680_CS_HIGH();  
 
-    return rx;//remove trash (first byte)*/
-}
+    return rx;//remove trash (first byte)
+}*/
 
 /*static inline uint8_t BME680_SPI_WriteAddr(uint8_t reg){
     return reg & 0x7F;
