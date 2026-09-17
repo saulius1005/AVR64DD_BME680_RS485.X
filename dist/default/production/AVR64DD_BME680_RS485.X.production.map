@@ -1,27 +1,27 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_mulsi3.o)
-                              build/default/debug/BME680.o (__mulsi3)
+                              build/default/production/BME680.o (__mulsi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_udivmodsi4.o)
-                              build/default/debug/BME680.o (__udivmodsi4)
+                              build/default/production/BME680.o (__udivmodsi4)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_divmodsi4.o)
-                              build/default/debug/BME680.o (__divmodsi4)
+                              build/default/production/BME680.o (__divmodsi4)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_negsi2.o)
                               c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_divmodsi4.o) (__negsi2)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_copy_data.o)
-                              build/default/debug/main.o (__do_copy_data)
+                              build/default/production/main.o (__do_copy_data)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_bswapsi2.o)
-                              build/default/debug/BME680.o (__bswapsi2)
+                              build/default/production/BME680.o (__bswapsi2)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_muluhisi3.o)
-                              build/default/debug/BME680.o (__muluhisi3)
+                              build/default/production/BME680.o (__muluhisi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_mulshisi3.o)
-                              build/default/debug/BME680.o (__mulshisi3)
+                              build/default/production/BME680.o (__mulshisi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_umulhisi3.o)
                               c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_muluhisi3.o) (__umulhisi3)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(exit.o)
                               C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o (exit)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(vsnprintf.o)
-                              build/default/debug/USART.o (vsnprintf)
+                              build/default/production/USART.o (vsnprintf)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(vfprintf.o)
                               c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(vsnprintf.o) (vfprintf)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(errno.o)
@@ -67,7 +67,7 @@ c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../av
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(__fmt_x.o)
                               c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(__io_fmt_needed.o) (__fmt_x_needed)
 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
-                              build/default/debug/CLK.o (ccp_write_io)
+                              build/default/production/CLK.o (ccp_write_io)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_divmodhi4.o)
                               c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(__fmt_a.o) (__divmodhi4)
 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_exit.o)
@@ -136,50 +136,50 @@ Discarded input sections
 
  .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
  .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .text          0x0000000000000000        0x0 build/default/debug/BME680.o
- .data          0x0000000000000000        0x0 build/default/debug/BME680.o
- .bss           0x0000000000000000        0x0 build/default/debug/BME680.o
+ .text          0x0000000000000000        0x0 build/default/production/BME680.o
+ .data          0x0000000000000000        0x0 build/default/production/BME680.o
+ .bss           0x0000000000000000        0x0 build/default/production/BME680.o
  .text.swap_and_align
-                0x0000000000000000       0x28 build/default/debug/BME680.o
+                0x0000000000000000       0x28 build/default/production/BME680.o
  .text.BME680_read_ID
-                0x0000000000000000       0x28 build/default/debug/BME680.o
+                0x0000000000000000       0x28 build/default/production/BME680.o
  .text.BME680_reset
-                0x0000000000000000       0x2e build/default/debug/BME680.o
+                0x0000000000000000       0x2e build/default/production/BME680.o
  .text.BME680_Ctrl_gas
-                0x0000000000000000       0xd8 build/default/debug/BME680.o
+                0x0000000000000000       0xd8 build/default/production/BME680.o
  .text.BME680_gas_wait_90
-                0x0000000000000000       0xd4 build/default/debug/BME680.o
+                0x0000000000000000       0xd4 build/default/production/BME680.o
  .text.BME680_res_heat_90
-                0x0000000000000000       0xd4 build/default/debug/BME680.o
+                0x0000000000000000       0xd4 build/default/production/BME680.o
  .text.BME680_idac_heat_90
-                0x0000000000000000       0xd4 build/default/debug/BME680.o
+                0x0000000000000000       0xd4 build/default/production/BME680.o
  .text.BME680_read_gas
-                0x0000000000000000       0x92 build/default/debug/BME680.o
+                0x0000000000000000       0x92 build/default/production/BME680.o
  .text.BME680_eas_status0
-                0x0000000000000000       0xa8 build/default/debug/BME680.o
+                0x0000000000000000       0xa8 build/default/production/BME680.o
  .text.BME680_read_gas_calib
-                0x0000000000000000        0x2 build/default/debug/BME680.o
- .text          0x0000000000000000        0x0 build/default/debug/main.o
- .data          0x0000000000000000        0x0 build/default/debug/main.o
- .bss           0x0000000000000000        0x0 build/default/debug/main.o
- .text          0x0000000000000000        0x0 build/default/debug/SPI.o
- .data          0x0000000000000000        0x0 build/default/debug/SPI.o
- .bss           0x0000000000000000        0x0 build/default/debug/SPI.o
+                0x0000000000000000        0x2 build/default/production/BME680.o
+ .text          0x0000000000000000        0x0 build/default/production/main.o
+ .data          0x0000000000000000        0x0 build/default/production/main.o
+ .bss           0x0000000000000000        0x0 build/default/production/main.o
+ .text          0x0000000000000000        0x0 build/default/production/SPI.o
+ .data          0x0000000000000000        0x0 build/default/production/SPI.o
+ .bss           0x0000000000000000        0x0 build/default/production/SPI.o
  .text.SPI_write
-                0x0000000000000000       0x16 build/default/debug/SPI.o
- .text          0x0000000000000000        0x0 build/default/debug/USART.o
- .data          0x0000000000000000        0x0 build/default/debug/USART.o
- .bss           0x0000000000000000        0x0 build/default/debug/USART.o
+                0x0000000000000000       0x16 build/default/production/SPI.o
+ .text          0x0000000000000000        0x0 build/default/production/USART.o
+ .data          0x0000000000000000        0x0 build/default/production/USART.o
+ .bss           0x0000000000000000        0x0 build/default/production/USART.o
  .text.USART0_readChar
-                0x0000000000000000       0x16 build/default/debug/USART.o
- .text          0x0000000000000000        0x0 build/default/debug/CLK.o
- .data          0x0000000000000000        0x0 build/default/debug/CLK.o
- .bss           0x0000000000000000        0x0 build/default/debug/CLK.o
+                0x0000000000000000       0x16 build/default/production/USART.o
+ .text          0x0000000000000000        0x0 build/default/production/CLK.o
+ .data          0x0000000000000000        0x0 build/default/production/CLK.o
+ .bss           0x0000000000000000        0x0 build/default/production/CLK.o
  .text.CLOCK_XOSCHF_clock_init
-                0x0000000000000000       0x20 build/default/debug/CLK.o
- .text          0x0000000000000000        0x0 build/default/debug/GPIO.o
- .data          0x0000000000000000        0x0 build/default/debug/GPIO.o
- .bss           0x0000000000000000        0x0 build/default/debug/GPIO.o
+                0x0000000000000000       0x20 build/default/production/CLK.o
+ .text          0x0000000000000000        0x0 build/default/production/GPIO.o
+ .data          0x0000000000000000        0x0 build/default/production/GPIO.o
+ .bss           0x0000000000000000        0x0 build/default/production/GPIO.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_mulsi3.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_mulsi3.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a(_mulsi3.o)
@@ -764,17 +764,15 @@ Address of section .data set to 0x806000
                 0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
 LOAD C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
-LOAD build/default/debug/BME680.o
-LOAD build/default/debug/main.o
-LOAD build/default/debug/SPI.o
-LOAD build/default/debug/USART.o
-LOAD build/default/debug/CLK.o
-LOAD build/default/debug/GPIO.o
+LOAD build/default/production/BME680.o
+LOAD build/default/production/main.o
+LOAD build/default/production/SPI.o
+LOAD build/default/production/USART.o
+LOAD build/default/production/CLK.o
+LOAD build/default/production/GPIO.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libm.a
 END GROUP
-                0x0000000000000001                __MPLAB_DEBUG = 0x1
-                0x0000000000000001                __DEBUG = 0x1
 START GROUP
 LOAD c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega2/memx-const/mapped\libgcc.a
 LOAD c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libm.a
@@ -996,7 +994,7 @@ END GROUP
 
 .fuse           0x0000000000820000        0x9
  *(.fuse)
- .fuse          0x0000000000820000        0x9 build/default/debug/main.o
+ .fuse          0x0000000000820000        0x9 build/default/production/main.o
                 0x0000000000820000                __fuse
  *(.lfuse)
  *(.hfuse)
@@ -1004,7 +1002,7 @@ END GROUP
 
 .lock           0x0000000000830000        0x4
  *(.lock*)
- .lock          0x0000000000830000        0x4 build/default/debug/main.o
+ .lock          0x0000000000830000        0x4 build/default/production/main.o
                 0x0000000000830000                __lock
 
 .signature
@@ -1036,13 +1034,13 @@ END GROUP
 
 .comment        0x0000000000000000       0x5b
  *(.comment)
- .comment       0x0000000000000000       0x2f build/default/debug/BME680.o
+ .comment       0x0000000000000000       0x2f build/default/production/BME680.o
                                          0x30 (size before relaxing)
- .comment       0x000000000000002f       0x30 build/default/debug/main.o
- .comment       0x000000000000002f       0x30 build/default/debug/SPI.o
- .comment       0x000000000000002f       0x30 build/default/debug/USART.o
- .comment       0x000000000000002f       0x30 build/default/debug/CLK.o
- .comment       0x000000000000002f       0x30 build/default/debug/GPIO.o
+ .comment       0x000000000000002f       0x30 build/default/production/main.o
+ .comment       0x000000000000002f       0x30 build/default/production/SPI.o
+ .comment       0x000000000000002f       0x30 build/default/production/USART.o
+ .comment       0x000000000000002f       0x30 build/default/production/CLK.o
+ .comment       0x000000000000002f       0x30 build/default/production/GPIO.o
  .comment       0x000000000000002f       0x2c c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(exit.o)
                                          0x2d (size before relaxing)
  .comment       0x000000000000005b       0x2d c:/program files/microchip/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2/memx-const/mapped\libc.a(vsnprintf.o)
@@ -1265,80 +1263,80 @@ END GROUP
 .debug_aranges  0x0000000000000000      0x1e8
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0xf0 build/default/debug/BME680.o
+                0x0000000000000000       0xf0 build/default/production/BME680.o
  .debug_aranges
-                0x00000000000000f0       0x20 build/default/debug/main.o
+                0x00000000000000f0       0x20 build/default/production/main.o
  .debug_aranges
-                0x0000000000000110       0x30 build/default/debug/SPI.o
+                0x0000000000000110       0x30 build/default/production/SPI.o
  .debug_aranges
-                0x0000000000000140       0x40 build/default/debug/USART.o
+                0x0000000000000140       0x40 build/default/production/USART.o
  .debug_aranges
-                0x0000000000000180       0x28 build/default/debug/CLK.o
+                0x0000000000000180       0x28 build/default/production/CLK.o
  .debug_aranges
-                0x00000000000001a8       0x20 build/default/debug/GPIO.o
+                0x00000000000001a8       0x20 build/default/production/GPIO.o
  .debug_aranges
                 0x00000000000001c8       0x20 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x14ec8
+.debug_info     0x0000000000000000    0x14e7a
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x2057 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_info    0x0000000000002057     0x92f5 build/default/debug/BME680.o
- .debug_info    0x000000000000b34c     0x7c4b build/default/debug/main.o
- .debug_info    0x0000000000012f97      0x4b1 build/default/debug/SPI.o
- .debug_info    0x0000000000013448      0x89a build/default/debug/USART.o
- .debug_info    0x0000000000013ce2      0x930 build/default/debug/CLK.o
- .debug_info    0x0000000000014612      0x7f2 build/default/debug/GPIO.o
- .debug_info    0x0000000000014e04       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+ .debug_info    0x0000000000002057     0x92e8 build/default/production/BME680.o
+ .debug_info    0x000000000000b33f     0x7c3e build/default/production/main.o
+ .debug_info    0x0000000000012f7d      0x4a4 build/default/production/SPI.o
+ .debug_info    0x0000000000013421      0x88d build/default/production/USART.o
+ .debug_info    0x0000000000013cae      0x923 build/default/production/CLK.o
+ .debug_info    0x00000000000145d1      0x7e5 build/default/production/GPIO.o
+ .debug_info    0x0000000000014db6       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_abbrev   0x0000000000000000     0x270c
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x1ea0 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_abbrev  0x0000000000001ea0      0x2e7 build/default/debug/BME680.o
- .debug_abbrev  0x0000000000002187      0x152 build/default/debug/main.o
- .debug_abbrev  0x00000000000022d9       0xe5 build/default/debug/SPI.o
- .debug_abbrev  0x00000000000023be      0x1af build/default/debug/USART.o
- .debug_abbrev  0x000000000000256d       0xda build/default/debug/CLK.o
- .debug_abbrev  0x0000000000002647       0xb1 build/default/debug/GPIO.o
+ .debug_abbrev  0x0000000000001ea0      0x2e7 build/default/production/BME680.o
+ .debug_abbrev  0x0000000000002187      0x152 build/default/production/main.o
+ .debug_abbrev  0x00000000000022d9       0xe5 build/default/production/SPI.o
+ .debug_abbrev  0x00000000000023be      0x1af build/default/production/USART.o
+ .debug_abbrev  0x000000000000256d       0xda build/default/production/CLK.o
+ .debug_abbrev  0x0000000000002647       0xb1 build/default/production/GPIO.o
  .debug_abbrev  0x00000000000026f8       0x14 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_line     0x0000000000000000     0x1320
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x1aa C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_line    0x00000000000001aa      0x948 build/default/debug/BME680.o
- .debug_line    0x0000000000000af2      0x1aa build/default/debug/main.o
- .debug_line    0x0000000000000c9c      0x15d build/default/debug/SPI.o
- .debug_line    0x0000000000000df9      0x1f5 build/default/debug/USART.o
- .debug_line    0x0000000000000fee      0x18d build/default/debug/CLK.o
- .debug_line    0x000000000000117b      0x138 build/default/debug/GPIO.o
+ .debug_line    0x00000000000001aa      0x948 build/default/production/BME680.o
+ .debug_line    0x0000000000000af2      0x1aa build/default/production/main.o
+ .debug_line    0x0000000000000c9c      0x15d build/default/production/SPI.o
+ .debug_line    0x0000000000000df9      0x1f5 build/default/production/USART.o
+ .debug_line    0x0000000000000fee      0x18d build/default/production/CLK.o
+ .debug_line    0x000000000000117b      0x138 build/default/production/GPIO.o
  .debug_line    0x00000000000012b3       0x6d C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_frame    0x0000000000000000      0x580
  *(.debug_frame)
- .debug_frame   0x0000000000000000      0x3f0 build/default/debug/BME680.o
- .debug_frame   0x00000000000003f0       0x60 build/default/debug/main.o
- .debug_frame   0x0000000000000450       0x44 build/default/debug/SPI.o
- .debug_frame   0x0000000000000494       0x94 build/default/debug/USART.o
- .debug_frame   0x0000000000000528       0x34 build/default/debug/CLK.o
- .debug_frame   0x000000000000055c       0x24 build/default/debug/GPIO.o
+ .debug_frame   0x0000000000000000      0x3f0 build/default/production/BME680.o
+ .debug_frame   0x00000000000003f0       0x60 build/default/production/main.o
+ .debug_frame   0x0000000000000450       0x44 build/default/production/SPI.o
+ .debug_frame   0x0000000000000494       0x94 build/default/production/USART.o
+ .debug_frame   0x0000000000000528       0x34 build/default/production/CLK.o
+ .debug_frame   0x000000000000055c       0x24 build/default/production/GPIO.o
 
 .debug_str      0x0000000000000000      0xe32
  *(.debug_str)
  .debug_str     0x0000000000000000      0xdcd C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
- .debug_str     0x0000000000000dcd       0x38 build/default/debug/BME680.o
- .debug_str     0x0000000000000e05        0x0 build/default/debug/main.o
- .debug_str     0x0000000000000e05        0x0 build/default/debug/SPI.o
- .debug_str     0x0000000000000e05        0xa build/default/debug/USART.o
- .debug_str     0x0000000000000e0f        0xd build/default/debug/CLK.o
- .debug_str     0x0000000000000e1c       0x16 build/default/debug/GPIO.o
+ .debug_str     0x0000000000000dcd       0x38 build/default/production/BME680.o
+ .debug_str     0x0000000000000e05        0x0 build/default/production/main.o
+ .debug_str     0x0000000000000e05        0x0 build/default/production/SPI.o
+ .debug_str     0x0000000000000e05        0xa build/default/production/USART.o
+ .debug_str     0x0000000000000e0f        0xd build/default/production/CLK.o
+ .debug_str     0x0000000000000e1c       0x16 build/default/production/GPIO.o
 
 .debug_loc      0x0000000000000000     0x159a
  *(.debug_loc)
- .debug_loc     0x0000000000000000     0x1496 build/default/debug/BME680.o
- .debug_loc     0x0000000000001496       0x5c build/default/debug/SPI.o
- .debug_loc     0x00000000000014f2       0xa8 build/default/debug/USART.o
+ .debug_loc     0x0000000000000000     0x1496 build/default/production/BME680.o
+ .debug_loc     0x0000000000001496       0x5c build/default/production/SPI.o
+ .debug_loc     0x00000000000014f2       0xa8 build/default/production/USART.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1360,16 +1358,16 @@ END GROUP
 
 .debug_ranges   0x0000000000000000      0x1b0
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000      0x128 build/default/debug/BME680.o
- .debug_ranges  0x0000000000000128       0x10 build/default/debug/main.o
- .debug_ranges  0x0000000000000138       0x20 build/default/debug/SPI.o
- .debug_ranges  0x0000000000000158       0x30 build/default/debug/USART.o
- .debug_ranges  0x0000000000000188       0x18 build/default/debug/CLK.o
- .debug_ranges  0x00000000000001a0       0x10 build/default/debug/GPIO.o
+ .debug_ranges  0x0000000000000000      0x128 build/default/production/BME680.o
+ .debug_ranges  0x0000000000000128       0x10 build/default/production/main.o
+ .debug_ranges  0x0000000000000138       0x20 build/default/production/SPI.o
+ .debug_ranges  0x0000000000000158       0x30 build/default/production/USART.o
+ .debug_ranges  0x0000000000000188       0x18 build/default/production/CLK.o
+ .debug_ranges  0x00000000000001a0       0x10 build/default/production/GPIO.o
 
 .debug_macro
  *(.debug_macro)
-OUTPUT(dist/default/debug/AVR64DD_BME680_RS485.X.debug.elf elf32-avr)
+OUTPUT(dist/default/production/AVR64DD_BME680_RS485.X.production.elf elf32-avr)
 LOAD linker stubs
 LOAD data_init
 
@@ -1379,11 +1377,11 @@ LOAD data_init
                 0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
 
 .bss.BME680     0x0000000000806002       0x81
- .bss.BME680    0x0000000000806002       0x81 build/default/debug/BME680.o
+ .bss.BME680    0x0000000000806002       0x81 build/default/production/BME680.o
                 0x0000000000806002                BME680
 
 .rodata         0x0000000000808102       0x35 load address 0x0000000000000102
- .rodata        0x0000000000808102       0x35 build/default/debug/main.o
+ .rodata        0x0000000000808102       0x35 build/default/production/main.o
 
 .text.__fmt_fp  0x0000000000000138      0x728
  .text.__fmt_fp
@@ -1405,13 +1403,13 @@ LOAD data_init
 .text.BME680_calculate_pressure
                 0x0000000000001292      0x3c6
  .text.BME680_calculate_pressure
-                0x0000000000001292      0x3c6 build/default/debug/BME680.o
+                0x0000000000001292      0x3c6 build/default/production/BME680.o
                 0x0000000000001292                BME680_calculate_pressure
 
 .text.BME680_calculate_humidity
                 0x0000000000001658      0x284
  .text.BME680_calculate_humidity
-                0x0000000000001658      0x284 build/default/debug/BME680.o
+                0x0000000000001658      0x284 build/default/production/BME680.o
                 0x0000000000001658                BME680_calculate_humidity
 
 .text.__fmt_x   0x00000000000018dc      0x256
@@ -1431,7 +1429,7 @@ LOAD data_init
 .text.BME680_calculate_temperature
                 0x0000000000001e18      0x15a
  .text.BME680_calculate_temperature
-                0x0000000000001e18      0x15a build/default/debug/BME680.o
+                0x0000000000001e18      0x15a build/default/production/BME680.o
                 0x0000000000001e18                BME680_calculate_temperature
 
 .text.__cvt_u   0x0000000000001f72      0x146
@@ -1441,11 +1439,11 @@ LOAD data_init
 .text.BME680_read_pres_calib
                 0x00000000000020b8      0x11a
  .text.BME680_read_pres_calib
-                0x00000000000020b8      0x11a build/default/debug/BME680.o
+                0x00000000000020b8      0x11a build/default/production/BME680.o
                 0x00000000000020b8                BME680_read_pres_calib
 
 .text.main      0x00000000000021d2      0x106
- .text.main     0x00000000000021d2      0x106 build/default/debug/main.o
+ .text.main     0x00000000000021d2      0x106 build/default/production/main.o
                 0x00000000000021d2                main
 
 .text.floorf    0x00000000000022d8       0xe8
@@ -1455,7 +1453,7 @@ LOAD data_init
 .text.BME680_read_hum_calib
                 0x00000000000023c0       0xe0
  .text.BME680_read_hum_calib
-                0x00000000000023c0       0xe0 build/default/debug/BME680.o
+                0x00000000000023c0       0xe0 build/default/production/BME680.o
                 0x00000000000023c0                BME680_read_hum_calib
 
 .text           0x00000000000024a0       0xde
@@ -1466,7 +1464,7 @@ LOAD data_init
 .text.BME680_exchange_data
                 0x000000000000257e       0xd8
  .text.BME680_exchange_data
-                0x000000000000257e       0xd8 build/default/debug/BME680.o
+                0x000000000000257e       0xd8 build/default/production/BME680.o
                 0x000000000000257e                BME680_exchange_data
 
 .text.__pop_ptr
@@ -1491,7 +1489,7 @@ LOAD data_init
 .text.BME680_Ctrl_meas
                 0x00000000000029a2       0xbe
  .text.BME680_Ctrl_meas
-                0x00000000000029a2       0xbe build/default/debug/BME680.o
+                0x00000000000029a2       0xbe build/default/production/BME680.o
                 0x00000000000029a2                BME680_Ctrl_meas
 
 .text.__fmt_u   0x0000000000002a60       0xae
@@ -1512,7 +1510,7 @@ LOAD data_init
 .text.BME680_Config
                 0x0000000000002c48       0x86
  .text.BME680_Config
-                0x0000000000002c48       0x86 build/default/debug/BME680.o
+                0x0000000000002c48       0x86 build/default/production/BME680.o
                 0x0000000000002c48                BME680_Config
 
 .text.vsnprintf
@@ -1528,7 +1526,7 @@ LOAD data_init
 .text.BME680_read_temp_calib
                 0x0000000000002dc4       0x6a
  .text.BME680_read_temp_calib
-                0x0000000000002dc4       0x6a build/default/debug/BME680.o
+                0x0000000000002dc4       0x6a build/default/production/BME680.o
                 0x0000000000002dc4                BME680_read_temp_calib
 
 .text.__printf_core
@@ -1540,7 +1538,7 @@ LOAD data_init
 .text.BME680_Ctrl_hum
                 0x0000000000002e96       0x5e
  .text.BME680_Ctrl_hum
-                0x0000000000002e96       0x5e build/default/debug/BME680.o
+                0x0000000000002e96       0x5e build/default/production/BME680.o
                 0x0000000000002e96                BME680_Ctrl_hum
 
 .text           0x0000000000002ef4       0x5e
@@ -1561,19 +1559,19 @@ LOAD data_init
 .text.BME680_read_temp
                 0x0000000000003002       0x52
  .text.BME680_read_temp
-                0x0000000000003002       0x52 build/default/debug/BME680.o
+                0x0000000000003002       0x52 build/default/production/BME680.o
                 0x0000000000003002                BME680_read_temp
 
 .text.BME680_read_pres
                 0x0000000000003054       0x52
  .text.BME680_read_pres
-                0x0000000000003054       0x52 build/default/debug/BME680.o
+                0x0000000000003054       0x52 build/default/production/BME680.o
                 0x0000000000003054                BME680_read_pres
 
 .text.GPIO_init
                 0x00000000000030a6       0x48
  .text.GPIO_init
-                0x00000000000030a6       0x48 build/default/debug/GPIO.o
+                0x00000000000030a6       0x48 build/default/production/GPIO.o
                 0x00000000000030a6                GPIO_init
 
 .text           0x00000000000030ee       0x48
@@ -1583,13 +1581,13 @@ LOAD data_init
 .text.BME680_change_page
                 0x0000000000003136       0x44
  .text.BME680_change_page
-                0x0000000000003136       0x44 build/default/debug/BME680.o
+                0x0000000000003136       0x44 build/default/production/BME680.o
                 0x0000000000003136                BME680_change_page
 
 .text.USART0_sendString
                 0x000000000000317a       0x44
  .text.USART0_sendString
-                0x000000000000317a       0x44 build/default/debug/USART.o
+                0x000000000000317a       0x44 build/default/production/USART.o
                 0x000000000000317a                USART0_sendString
 
 .text.libgcc.div
@@ -1606,13 +1604,13 @@ LOAD data_init
 .text.BME680_read_hum
                 0x0000000000003246       0x40
  .text.BME680_read_hum
-                0x0000000000003246       0x40 build/default/debug/BME680.o
+                0x0000000000003246       0x40 build/default/production/BME680.o
                 0x0000000000003246                BME680_read_hum
 
 .text.USART_printf
                 0x0000000000003286       0x40
  .text.USART_printf
-                0x0000000000003286       0x40 build/default/debug/USART.o
+                0x0000000000003286       0x40 build/default/production/USART.o
                 0x0000000000003286                USART_printf
 
 .text.__fmt_state
@@ -1665,13 +1663,13 @@ LOAD data_init
 .text.CLOCK_INHF_clock_init
                 0x000000000000347c       0x2a
  .text.CLOCK_INHF_clock_init
-                0x000000000000347c       0x2a build/default/debug/CLK.o
+                0x000000000000347c       0x2a build/default/production/CLK.o
                 0x000000000000347c                CLOCK_INHF_clock_init
 
 .text.BME680_read_t_p_rh
                 0x00000000000034a6       0x28
  .text.BME680_read_t_p_rh
-                0x00000000000034a6       0x28 build/default/debug/BME680.o
+                0x00000000000034a6       0x28 build/default/production/BME680.o
                 0x00000000000034a6                BME680_read_t_p_rh
 
 .text.libgcc.div
@@ -1690,7 +1688,7 @@ LOAD data_init
 .text.ui8b_to_32b
                 0x000000000000351e       0x24
  .text.ui8b_to_32b
-                0x000000000000351e       0x24 build/default/debug/BME680.o
+                0x000000000000351e       0x24 build/default/production/BME680.o
                 0x000000000000351e                ui8b_to_32b
 
 .text           0x0000000000003542       0x22
@@ -1728,19 +1726,19 @@ LOAD data_init
 .text.SPI_exchange_data
                 0x00000000000035fa       0x1a
  .text.SPI_exchange_data
-                0x00000000000035fa       0x1a build/default/debug/SPI.o
+                0x00000000000035fa       0x1a build/default/production/SPI.o
                 0x00000000000035fa                SPI_exchange_data
 
 .text.ui32b_to_8b
                 0x0000000000003614       0x16
  .text.ui32b_to_8b
-                0x0000000000003614       0x16 build/default/debug/BME680.o
+                0x0000000000003614       0x16 build/default/production/BME680.o
                 0x0000000000003614                ui32b_to_8b
 
 .text.USART0_init
                 0x000000000000362a       0x16
  .text.USART0_init
-                0x000000000000362a       0x16 build/default/debug/USART.o
+                0x000000000000362a       0x16 build/default/production/USART.o
                 0x000000000000362a                USART0_init
 
 .text.libgcc.mul
@@ -1768,7 +1766,7 @@ LOAD data_init
 .text.USART0_sendChar
                 0x00000000000036a2       0x10
  .text.USART0_sendChar
-                0x00000000000036a2       0x10 build/default/debug/USART.o
+                0x00000000000036a2       0x10 build/default/production/USART.o
                 0x00000000000036a2                USART0_sendChar
 
 .text.libgcc.div
@@ -1794,7 +1792,7 @@ LOAD data_init
 
 .text.SPI_init  0x00000000000036f2        0xe
  .text.SPI_init
-                0x00000000000036f2        0xe build/default/debug/SPI.o
+                0x00000000000036f2        0xe build/default/production/SPI.o
                 0x00000000000036f2                SPI_init
 
 .text.libgcc.builtins

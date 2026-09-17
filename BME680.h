@@ -234,6 +234,7 @@ extern BME680_t BME680;
 
 uint32_t BME680_exchange_data(uint32_t cmd, uint8_t tx_length, bool send_dummy);
 void BME680_read_t_p_rh();//Reads tremperature, pressure and humidity
+void BME680_read_ID();
 
 
 #ifdef	__cplusplus
