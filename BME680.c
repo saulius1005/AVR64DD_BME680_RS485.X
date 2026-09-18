@@ -231,7 +231,7 @@ void BME680_calculate_temperature(){
     BME680.temperature = ((BME680.t_fine * 5) + 128) >> 8;
     
     BME680.temp_recived = false;
-    BME680.Ctrl_meas.mode = sleep_mode; //reset forced mode to sleep. It means new measurement next time.
+    //BME680.Ctrl_meas.mode = sleep_mode; //reset forced mode to sleep. It means new measurement next time.
 }
 
 void BME680_calculate_pressure(){
@@ -246,7 +246,7 @@ void BME680_calculate_pressure(){
     var1 = ((32768 + var1) * (int32_t)BME680.calibration_data.par_p1) >> 15; 
     BME680.pressure = 1048576 - BME680.pres; 
     BME680.pressure = (uint32_t)((BME680.pressure - (var2 >> 12)) * ((uint32_t)3125)); 
-    if (BME680.pressure >= (1 << 30)) BME680.pressure = ((BME680.pressure / (uint32_t)var1) << 1); 
+    if (BME680.pressure >= ((uint32_t)1 << 30)) BME680.pressure = ((BME680.pressure / (uint32_t)var1) << 1); 
     else BME680.pressure = ((BME680.pressure << 1) / (uint32_t)var1); 
     var1 = ((int32_t)BME680.calibration_data.par_p9 * (int32_t)(((BME680.pressure >> 3) * (BME680.pressure >> 3)) >> 13)) >> 12; 
     var2 = ((int32_t)(BME680.pressure >> 2) * (int32_t)BME680.calibration_data.par_p8) >> 13; 
@@ -254,7 +254,7 @@ void BME680_calculate_pressure(){
     BME680.pressure = (int32_t)(BME680.pressure) + ((var1 + var2 + var3 + ((int32_t)BME680.calibration_data.par_p7 << 7)) >> 4);
     
     BME680.pres_recived = false; //reset for new measurement 
-    BME680.Ctrl_meas.mode = sleep_mode;
+    //BME680.Ctrl_meas.mode = sleep_mode;
 }
 
 void BME680_calculate_humidity(){
@@ -270,15 +270,17 @@ void BME680_calculate_humidity(){
     BME680.humidity = (((var3 + var6) >> 10) * ((int32_t) 1000)) >> 12;
     
     BME680.hum_recived = false; //reset for new measurement 
-    BME680.Ctrl_meas.mode = sleep_mode;
+    //BME680.Ctrl_meas.mode = sleep_mode;
 }
 
-void BME680_read_t_p_rh(){
+void BME680_read_t_p_rh(){    
+    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, forced_mode);  //temperature and pressure OS   
     BME680_Ctrl_hum(oversampling_x16, false); //humidity oversample and interrupt off 
-    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, forced_mode);  //temperature and pressure OS    
     BME680_Config(Filter_coef_127, false); //IIR filter and keep spi 3wire mode disabled 
 
-    BME680_calculate_humidity();                
     BME680_calculate_temperature();
+    BME680_calculate_humidity();                    
     BME680_calculate_pressure();
+    
+    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, sleep_mode);  //back to sleep
 }
