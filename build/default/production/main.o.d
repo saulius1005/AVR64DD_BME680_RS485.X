@@ -28,7 +28,7 @@ build/default/production/main.o.d build/default/production/main.o: main.c \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h CLK.h \
- GPIO.h USART.h SPI.h BME680.h MCU_Config.h
+ GPIO.h USART.h SPI.h BME680.h ADC.h MCU_Config.h
 
 settings.h:
 
@@ -97,5 +97,7 @@ USART.h:
 SPI.h:
 
 BME680.h:
+
+ADC.h:
 
 MCU_Config.h:

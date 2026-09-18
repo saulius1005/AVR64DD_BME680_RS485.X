@@ -76,9 +76,6 @@ void BME680_Ctrl_hum(BME680_meas_os_t os_h, bool spi_3w_int_en){
 
 
 void BME680_read_hum(){ //need manually reset BME680.hum_recived = false; // to begin new reading
-    if(BME680.hum_recived)
-        return;
-    
     if(!BME680.STATUS_spi_mem_page){ //if page 0 change it to 1
         BME680_change_page(BME680_page_1);
     }
@@ -87,16 +84,12 @@ void BME680_read_hum(){ //need manually reset BME680.hum_recived = false; // to 
     uint32_t answer = BME680_exchange_data(cmd<<8, 2, true)>>8; 
 
     answer = __builtin_bswap16(answer);
-    
-    BME680.hum_recived = true; 
+
     BME680.hum = answer;
 
 }
 
 void BME680_read_temp(){ //need manually reset BME680.hum_recived = false; // to begin new reading // first msb, then lsb and xlsb
-    if(BME680.temp_recived)
-        return;
-    
     if(BME680.STATUS_spi_mem_page != 1){ //if page 0 change it to 1
         BME680_change_page(BME680_page_1);
     }    
@@ -105,16 +98,12 @@ void BME680_read_temp(){ //need manually reset BME680.hum_recived = false; // to
     uint32_t answer = BME680_exchange_data(cmd<<16, 3, true)>>8;
 
     answer = __builtin_bswap32(answer)>>8;
-    
-    BME680.temp_recived = true;
+
     BME680.temp = answer >> 4;
 
 }
 
 void BME680_read_pres(){ //need manually reset BME680.hum_recived = false; // to begin new reading
-    if(BME680.pres_recived)
-        return;
-    
     if(BME680.STATUS_spi_mem_page != 1){ //if page 0 change it to 1
         BME680_change_page(BME680_page_1);
     }
@@ -124,9 +113,7 @@ void BME680_read_pres(){ //need manually reset BME680.hum_recived = false; // to
     
     answer = __builtin_bswap32(answer)>>8;
     
-    BME680.pres_recived = true;
     BME680.pres = answer >> 4;
-
 }
 
 void BME680_read_hum_calib(){
@@ -229,9 +216,6 @@ void BME680_calculate_temperature(){
     int32_t var3 = ((((var1 >> 1) * (var1 >> 1)) >> 12) * ((int32_t)BME680.calibration_data.par_t3 << 4)) >> 14; 
     BME680.t_fine = var2 + var3; 
     BME680.temperature = ((BME680.t_fine * 5) + 128) >> 8;
-    
-    BME680.temp_recived = false;
-    //BME680.Ctrl_meas.mode = sleep_mode; //reset forced mode to sleep. It means new measurement next time.
 }
 
 void BME680_calculate_pressure(){
@@ -252,9 +236,6 @@ void BME680_calculate_pressure(){
     var2 = ((int32_t)(BME680.pressure >> 2) * (int32_t)BME680.calibration_data.par_p8) >> 13; 
     int32_t var3 = ((int32_t)(BME680.pressure >> 8) * (int32_t)(BME680.pressure >> 8) * (int32_t)(BME680.pressure >> 8) * (int32_t)BME680.calibration_data.par_p10) >> 17; 
     BME680.pressure = (int32_t)(BME680.pressure) + ((var1 + var2 + var3 + ((int32_t)BME680.calibration_data.par_p7 << 7)) >> 4);
-    
-    BME680.pres_recived = false; //reset for new measurement 
-    //BME680.Ctrl_meas.mode = sleep_mode;
 }
 
 void BME680_calculate_humidity(){
@@ -268,19 +249,17 @@ void BME680_calculate_humidity(){
     int32_t var5 = ((var3 >> 14) * (var3 >> 14)) >> 10; 
     int32_t var6 = (var4 * var5) >> 1; 
     BME680.humidity = (((var3 + var6) >> 10) * ((int32_t) 1000)) >> 12;
-    
-    BME680.hum_recived = false; //reset for new measurement 
-    //BME680.Ctrl_meas.mode = sleep_mode;
+
 }
 
-void BME680_read_t_p_rh(){    
-    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, forced_mode);  //temperature and pressure OS   
-    BME680_Ctrl_hum(oversampling_x16, false); //humidity oversample and interrupt off 
+void BME680_read_t_p_rh(){
+    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, forced_mode);  //temperature and pressure OS     
+    BME680_Ctrl_hum(oversampling_x16, false); //humidity oversample and interrupt off   
     BME680_Config(Filter_coef_127, false); //IIR filter and keep spi 3wire mode disabled 
 
+    BME680_calculate_humidity();                
     BME680_calculate_temperature();
-    BME680_calculate_humidity();                    
     BME680_calculate_pressure();
     
-    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, sleep_mode);  //back to sleep
+    BME680_Ctrl_meas(oversampling_x16, oversampling_x16, sleep_mode);  //temperature and pressure OS  
 }

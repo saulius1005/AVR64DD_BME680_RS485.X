@@ -38,6 +38,7 @@ extern "C" {
 #include "USART.h"
 #include "SPI.h"
 #include "BME680.h"
+#include "ADC.h"
 
 
 #ifdef	__cplusplus

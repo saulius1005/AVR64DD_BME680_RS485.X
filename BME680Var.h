@@ -16,9 +16,7 @@ extern "C" {
 #endif
 
 BME680_t BME680 = {
-    .ID = 0, 
     .STATUS_spi_mem_page = 0,
-    .RESET = false,
     .Config = {
         .filter = Filter_coef_0,
         .spi_3w_en = false,
@@ -37,29 +35,9 @@ BME680_t BME680 = {
         .heat_off = false,
         .run_gas = false,
     },
-    .Gas_wait_x = {0},
-    .Res_heat_x = {0},
-    .Idac_heat_x = {0},
-    .gas_r = {
-        .gas_r_90 = 0,
-        .gas_range_r = 0,
-        .gas_valid_r = 0,
-        .heat_stab_r = 0,
-    },
-    .gas_r_recived = false,
     .hum = 0,
-    .hum_recived = false,
     .temp = 0,
-    .temp_recived = false,
     .pres = 0,
-    .pres_recived = 0,
-    .eas_status_0 = {
-        .gas_maes_index_0 = 0,
-        .gas_measuring = false,
-        .measuring = false,
-        .new_data_0 = false,
-    },
-    .eas_status_received = false,
     .calibration_data = {
         .temp_calib_received = false,
         .par_t1 = 0,

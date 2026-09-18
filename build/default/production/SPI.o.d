@@ -28,7 +28,7 @@ build/default/production/SPI.o.d build/default/production/SPI.o: SPI.c \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h CLK.h \
- GPIO.h USART.h SPI.h BME680.h
+ GPIO.h USART.h SPI.h BME680.h ADC.h
 
 settings.h:
 
@@ -97,3 +97,5 @@ USART.h:
 SPI.h:
 
 BME680.h:
+
+ADC.h:

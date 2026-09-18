@@ -1,4 +1,4 @@
-build/default/debug/BME680.o.d build/default/debug/BME680.o: BME680.c \
+build/default/production/ADC.o.d build/default/production/ADC.o: ADC.c \
  settings.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\cci.h \
@@ -28,7 +28,7 @@ build/default/debug/BME680.o.d build/default/debug/BME680.o: BME680.c \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h CLK.h \
- GPIO.h USART.h SPI.h BME680.h BME680Var.h
+ GPIO.h USART.h SPI.h BME680.h ADC.h ADCVar.h
 
 settings.h:
 
@@ -98,4 +98,6 @@ SPI.h:
 
 BME680.h:
 
-BME680Var.h:
+ADC.h:
+
+ADCVar.h:

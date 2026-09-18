@@ -31,6 +31,9 @@
       <itemPath>MCU_Config.h</itemPath>
       <itemPath>GPIO.h</itemPath>
       <itemPath>SPI.h</itemPath>
+      <itemPath>ADC.c</itemPath>
+      <itemPath>ADC.h</itemPath>
+      <itemPath>ADCVar.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

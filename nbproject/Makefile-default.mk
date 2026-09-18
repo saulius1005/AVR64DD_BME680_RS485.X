@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=BME680.c main.c SPI.c USART.c CLK.c GPIO.c
+SOURCEFILES_QUOTED_IF_SPACED=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/BME680.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/SPI.o.d ${OBJECTDIR}/USART.o.d ${OBJECTDIR}/CLK.o.d ${OBJECTDIR}/GPIO.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/BME680.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/SPI.o.d ${OBJECTDIR}/USART.o.d ${OBJECTDIR}/CLK.o.d ${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/ADC.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o
+OBJECTFILES=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o
 
 # Source Files
-SOURCEFILES=BME680.c main.c SPI.c USART.c CLK.c GPIO.c
+SOURCEFILES=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c
 
 
 
@@ -124,6 +124,12 @@ ${OBJECTDIR}/GPIO.o: GPIO.c  .generated_files/flags/default/71313d2583c0f99931df
 	@${RM} ${OBJECTDIR}/GPIO.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/GPIO.o.d" -MT "${OBJECTDIR}/GPIO.o.d" -MT ${OBJECTDIR}/GPIO.o -o ${OBJECTDIR}/GPIO.o GPIO.c 
 	
+${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/4a9d6184983272036ee2b4c34839a6397e808d33 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ADC.o.d 
+	@${RM} ${OBJECTDIR}/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
+	
 else
 ${OBJECTDIR}/BME680.o: BME680.c  .generated_files/flags/default/5e7bb6850732b8318d8277cf1cf205400dccb8eb .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -160,6 +166,12 @@ ${OBJECTDIR}/GPIO.o: GPIO.c  .generated_files/flags/default/4397a32be1011284fba5
 	@${RM} ${OBJECTDIR}/GPIO.o.d 
 	@${RM} ${OBJECTDIR}/GPIO.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/GPIO.o.d" -MT "${OBJECTDIR}/GPIO.o.d" -MT ${OBJECTDIR}/GPIO.o -o ${OBJECTDIR}/GPIO.o GPIO.c 
+	
+${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/45a4867f4a1953fed97e1c43e91aad0242bc32d8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ADC.o.d 
+	@${RM} ${OBJECTDIR}/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
 	
 endif
 

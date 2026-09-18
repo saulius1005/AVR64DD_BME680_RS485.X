@@ -28,7 +28,7 @@ build/default/production/BME680.o.d build/default/production/BME680.o: \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h CLK.h \
- GPIO.h USART.h SPI.h BME680.h BME680Var.h
+ GPIO.h USART.h SPI.h BME680.h ADC.h BME680Var.h
 
 settings.h:
 
@@ -97,5 +97,7 @@ USART.h:
 SPI.h:
 
 BME680.h:
+
+ADC.h:
 
 BME680Var.h:

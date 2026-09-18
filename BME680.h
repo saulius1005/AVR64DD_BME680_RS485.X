@@ -191,50 +191,28 @@ typedef struct {
        
 typedef struct {
     bool STATUS_spi_mem_page; //spi page selection 0- page: 0x80-0xff, 1- page: 0x00-0x7F
-    bool RESET; //resets device //default value is 0x00 and writing to it 0xB6 gives same effect as power-on reset 
-    uint8_t ID; //device id
 
     BME680_Config_t Config;
     BME680_Ctrl_meas_t Ctrl_meas; 
     BME680_Ctrl_hum_t Ctrl_hum;
     BME680_Ctrl_gas_t Ctrl_gas;
-    
-    uint8_t Gas_wait_x[10];
-    uint8_t Res_heat_x[10]; //target of heater resistance
-    uint8_t Idac_heat_x[10]; //particular heater set point
-    
-    BME680_gas_r_t gas_r;
-    bool gas_r_recived;
-    
-    uint16_t hum;
-    bool hum_recived;
-    
-    int32_t temp;
-    bool temp_recived;
-    
+
+    uint16_t hum;    
+    int32_t temp;   
     int32_t pres;
-    bool pres_recived;
     
-    BME680_eas_status_0_t eas_status_0;
-    bool eas_status_received;
-    
-    BME680_CalibData_t calibration_data;
-    
+    BME680_CalibData_t calibration_data;   
     int32_t t_fine;
-    int32_t temperature;
     
-    int32_t pressure;
-    
+    int32_t temperature;   
+    int32_t pressure;    
     int32_t humidity;
     
 } BME680_t;
 
 extern BME680_t BME680;
 
-
-uint32_t BME680_exchange_data(uint32_t cmd, uint8_t tx_length, bool send_dummy);
 void BME680_read_t_p_rh();//Reads tremperature, pressure and humidity
-void BME680_read_ID();
 
 
 #ifdef	__cplusplus
