@@ -18,17 +18,12 @@ build/default/production/CLK.o.d build/default/production/CLK.o: CLK.c \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\eeprom.h \
- c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stddef.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay_basic.h \
- c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdlib.h CLK.h \
- GPIO.h USART.h SPI.h BME680.h ADC.h
+ GPIO.h USART.h SPI.h BME680.h ADC.h RTC.h RS485.h crc8.h
 
 settings.h:
 
@@ -68,16 +63,6 @@ c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\builtins.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\cpufunc.h:
 
-c:\program\ files\microchip\xc8\v3.10\avr\avr\include\avr\eeprom.h:
-
-c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stddef.h:
-
-c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay.h:
-
-c:\program\ files\microchip\xc8\v3.10\avr\avr\include\util\delay_basic.h:
-
-c:\program\ files\microchip\xc8\v3.10\avr\avr\include\math.h:
-
 c:\program\ files\microchip\xc8\v3.10\avr\avr\include\stdio.h:
 
 c:\program\ files\microchip\xc8\v3.10\avr\lib\gcc\avr\5.4.0\include\stdbool.h:
@@ -99,3 +84,9 @@ SPI.h:
 BME680.h:
 
 ADC.h:
+
+RTC.h:
+
+RS485.h:
+
+crc8.h:

@@ -3,25 +3,23 @@
 
 int main() {   
     
-    CLOCK_INHF_clock_init();
+    CLOCK_INHF_clock_init();//use internal clock
     GPIO_init();
     USART0_init();
     SPI_init();
     ADC0_init();
-
+    RTC_ON(1000); //set update time to one second
+            
     while(1){
-        ADC_read_ws_wd_sl();
-        BME680_read_t_p_rh();
-        USART_printf("Temperature:%3dC° ", (BME680.temperature + 50) / 100);
-        USART_printf("Pressure: %4dhPa ", (BME680.pressure + 50) / 100);
-        USART_printf("Humidity: %3d% ", (BME680.humidity + 500) / 1000);
         
-        USART_printf("MCU: %dmV", ADC0_sensors[3]->result );
-        USART_printf("WS: %dmV", ADC0_sensors[0]->result );
-        USART_printf("WD: %dmV", ADC0_sensors[1]->result );
-        USART_printf("SL: %dmV", ADC0_sensors[2]->result );
-        
-        _delay_ms(1000);
+        if (RTC.INTFLAGS & RTC_OVF_bm){ // once time is end (Led will glow about ~2ms) 
+            RTC.INTFLAGS = RTC_OVF_bm; //clear flag
+            TX_LED_ON(); //turn on tx led
+            ADC_read_ws_wd_sl(); //measure analog sensors data (Wind speed, direction and light level)
+            BME680_read_t_p_rh(); //measure bme680 temperature, pressure and humidity
+            RS485_TX(); //send all data to weather station
+            TX_LED_OFF(); // turn off TX led
+        }
     }
 }
 

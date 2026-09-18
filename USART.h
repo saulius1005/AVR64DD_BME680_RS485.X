@@ -13,8 +13,9 @@ extern "C" {
 #endif
 
 #define USART0_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (8 *(float)BAUD_RATE)) + 0.5) //UART baud calculation
-void USART0_init();
-void USART_printf(const char *format, ...);
+    
+void USART0_init(); //usart initialization settings
+void USART0_printf(const char *format, ...); //text formating and its sending through uart
 
 #ifdef	__cplusplus
 }

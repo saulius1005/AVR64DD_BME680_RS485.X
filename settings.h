@@ -18,15 +18,8 @@
 extern "C" {
 #endif
 
-/* --- CPU configuration --- */
-// Core CPU frequency used for delays and timing calculations
-#define F_CPU 24000000ULL //cpu clock
-
-/* --- Standard and device includes --- */
 #include <xc.h>
 #include <avr/cpufunc.h>
-#include <avr/eeprom.h>
-#include <util/delay.h> 
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -39,6 +32,9 @@ extern "C" {
 #include "SPI.h"
 #include "BME680.h"
 #include "ADC.h"
+#include "RTC.h"
+#include "RS485.h"
+#include "crc8.h"
 
 
 #ifdef	__cplusplus

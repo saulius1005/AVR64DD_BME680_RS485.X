@@ -30,11 +30,6 @@ BME680_t BME680 = {
         .osrs_h = oversampling_SKIP,
         .spi_3w_init_en = false,
     },
-    .Ctrl_gas = {
-        .nb_conv = heater_set_point_0,
-        .heat_off = false,
-        .run_gas = false,
-    },
     .hum = 0,
     .temp = 0,
     .pres = 0,

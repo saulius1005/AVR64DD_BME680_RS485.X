@@ -34,6 +34,15 @@
       <itemPath>ADC.c</itemPath>
       <itemPath>ADC.h</itemPath>
       <itemPath>ADCVar.h</itemPath>
+      <itemPath>RTC.c</itemPath>
+      <itemPath>RTC.h</itemPath>
+      <itemPath>RTCVar.h</itemPath>
+      <itemPath>RS485.c</itemPath>
+      <itemPath>RS485.h</itemPath>
+      <itemPath>RS485Var.h</itemPath>
+      <itemPath>crc8.c</itemPath>
+      <itemPath>crc8.h</itemPath>
+      <itemPath>crc8Var.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -86,7 +95,7 @@
         <property key="communication.speed" value="0,500"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="debugoptions.useswbreakpoints" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>

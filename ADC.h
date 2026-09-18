@@ -24,6 +24,7 @@ typedef struct {
     ADC_MUXPOS_t channel;
     VREF_REFSEL_t reference;
     uint16_t result;
+    uint16_t out;
 } analog_t;
 
 typedef struct{
@@ -36,8 +37,8 @@ typedef struct{
 extern analog_sensors_t AnalogSensors;
 extern analog_t *ADC0_sensors[4];
 
-void ADC0_init();
-void ADC_read_ws_wd_sl();
+void ADC0_init(); //adc settings
+void ADC_read_ws_wd_sl(); //read analog sensors data
 
 
 #ifdef	__cplusplus

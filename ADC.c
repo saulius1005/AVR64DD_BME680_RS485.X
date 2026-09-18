@@ -28,4 +28,13 @@ void ADC_read_ws_wd_sl(){
     for(uint8_t i = 0; i < 4; i++){
         ADC0_read(3-i); //start from MCU voltage
     }
+    
+    uint16_t *source[3] = {&ADC0_sensors[WSS_ch]->result, &ADC0_sensors[WDS_ch]->result, &ADC0_sensors[SLS_ch]->result};  
+    uint16_t *target[3] = {&ADC0_sensors[WSS_ch]->out, &ADC0_sensors[WDS_ch]->out, &ADC0_sensors[SLS_ch]->out};
+    uint16_t *ref = &ADC0_sensors[MCU_ch]->result;
+    
+    *target[WSS_ch] = (uint8_t)((double)*source[WSS_ch] / *ref * 30); //wind speed
+    *target[WDS_ch] = (uint8_t)(*source[WDS_ch] / (*ref / 8)); //wind direction
+    //SLS sensor need to calibrate with pyranometer for now i will send raw voltage
+    
 }

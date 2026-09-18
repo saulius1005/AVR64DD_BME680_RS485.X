@@ -5,8 +5,6 @@ void GPIO_init(){
 
     PORTA.DIRSET = PIN1_bm | PIN2_bm | PIN3_bm | PIN4_bm | PIN7_bm; //out: SPI_SS, RS485_TX_LED, RS485_RX_LED, RS485_TX, RS485_XDIR
     
-    //PORTA.PIN4CTRL = PORT_PULLUPEN_bm;
-    
     PORTA.DIRCLR = PIN5_bm; //in: RS485_RX
     
 
@@ -18,11 +16,11 @@ void GPIO_init(){
     PORTD.DIRSET = PIN4_bm | PIN6_bm; //out SPI_MOSI, SPI_SCK
     PORTD.DIRCLR = PIN5_bm; //in: SPI_MISO
     
-    PORTD.OUTCLR = PIN4_bm;
-    PORTD.PIN5CTRL = PORT_PULLUPEN_bm;
-    PORTD.OUTSET = PIN6_bm;
+    PORTD.OUTCLR = PIN4_bm; //MOSI LOW
+    PORTD.PIN5CTRL = PORT_PULLUPEN_bm;//MISO High
+    PORTD.OUTSET = PIN6_bm; // SCK high
     
-    PORTA.OUTSET = PIN1_bm;//ss
+    PORTA.OUTSET = PIN1_bm;//ss high
     
     PORTMUX.USARTROUTEA = PORTMUX_USART0_ALT1_gc;//use alt1 pa4, pa5, pa6, pa7
 	PORTMUX.SPIROUTEA = PORTMUX_SPI0_ALT4_gc; //alt4: PD4, PD5, PD6, PD7

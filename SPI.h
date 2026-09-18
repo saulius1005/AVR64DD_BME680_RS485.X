@@ -14,8 +14,6 @@ extern "C" {
 
 void SPI_init(); //spi initialization
 uint8_t SPI_exchange_data(uint8_t data); //spi data exchange of one byte
-void SPI_write(uint8_t data); //one byte write only
-
 
 #ifdef	__cplusplus
 }

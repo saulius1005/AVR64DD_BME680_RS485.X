@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c
+SOURCEFILES_QUOTED_IF_SPACED=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c RTC.c RS485.c crc8.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/BME680.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/SPI.o.d ${OBJECTDIR}/USART.o.d ${OBJECTDIR}/CLK.o.d ${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/ADC.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/RS485.o ${OBJECTDIR}/crc8.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/BME680.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/SPI.o.d ${OBJECTDIR}/USART.o.d ${OBJECTDIR}/CLK.o.d ${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/ADC.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/RS485.o.d ${OBJECTDIR}/crc8.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o
+OBJECTFILES=${OBJECTDIR}/BME680.o ${OBJECTDIR}/main.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/USART.o ${OBJECTDIR}/CLK.o ${OBJECTDIR}/GPIO.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/RS485.o ${OBJECTDIR}/crc8.o
 
 # Source Files
-SOURCEFILES=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c
+SOURCEFILES=BME680.c main.c SPI.c USART.c CLK.c GPIO.c ADC.c RTC.c RS485.c crc8.c
 
 
 
@@ -130,6 +130,24 @@ ${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/4a9d6184983272036ee2b4
 	@${RM} ${OBJECTDIR}/ADC.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
 	
+${OBJECTDIR}/RTC.o: RTC.c  .generated_files/flags/default/45e7869f619bacfa2f4d962e89a350cf6466ab1a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/RTC.o.d 
+	@${RM} ${OBJECTDIR}/RTC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/RTC.o.d" -MT "${OBJECTDIR}/RTC.o.d" -MT ${OBJECTDIR}/RTC.o -o ${OBJECTDIR}/RTC.o RTC.c 
+	
+${OBJECTDIR}/RS485.o: RS485.c  .generated_files/flags/default/88269550cbc78b38872011c1c2f79aa60be4b1d8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/RS485.o.d 
+	@${RM} ${OBJECTDIR}/RS485.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/RS485.o.d" -MT "${OBJECTDIR}/RS485.o.d" -MT ${OBJECTDIR}/RS485.o -o ${OBJECTDIR}/RS485.o RS485.c 
+	
+${OBJECTDIR}/crc8.o: crc8.c  .generated_files/flags/default/147eef380166187fea40310586961c0236cd2cf2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/crc8.o.d 
+	@${RM} ${OBJECTDIR}/crc8.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/crc8.o.d" -MT "${OBJECTDIR}/crc8.o.d" -MT ${OBJECTDIR}/crc8.o -o ${OBJECTDIR}/crc8.o crc8.c 
+	
 else
 ${OBJECTDIR}/BME680.o: BME680.c  .generated_files/flags/default/5e7bb6850732b8318d8277cf1cf205400dccb8eb .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -172,6 +190,24 @@ ${OBJECTDIR}/ADC.o: ADC.c  .generated_files/flags/default/45a4867f4a1953fed97e1c
 	@${RM} ${OBJECTDIR}/ADC.o.d 
 	@${RM} ${OBJECTDIR}/ADC.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/ADC.o.d" -MT "${OBJECTDIR}/ADC.o.d" -MT ${OBJECTDIR}/ADC.o -o ${OBJECTDIR}/ADC.o ADC.c 
+	
+${OBJECTDIR}/RTC.o: RTC.c  .generated_files/flags/default/c876e7e8886b1422de0ad78294190233b6e7c418 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/RTC.o.d 
+	@${RM} ${OBJECTDIR}/RTC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/RTC.o.d" -MT "${OBJECTDIR}/RTC.o.d" -MT ${OBJECTDIR}/RTC.o -o ${OBJECTDIR}/RTC.o RTC.c 
+	
+${OBJECTDIR}/RS485.o: RS485.c  .generated_files/flags/default/3235589fc422bbbfc93eb775ee95b3d4aff73d4b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/RS485.o.d 
+	@${RM} ${OBJECTDIR}/RS485.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/RS485.o.d" -MT "${OBJECTDIR}/RS485.o.d" -MT ${OBJECTDIR}/RS485.o -o ${OBJECTDIR}/RS485.o RS485.c 
+	
+${OBJECTDIR}/crc8.o: crc8.c  .generated_files/flags/default/fb4e104fbb317ff3824dfe015280d3420fd7b460 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/crc8.o.d 
+	@${RM} ${OBJECTDIR}/crc8.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mconst-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/crc8.o.d" -MT "${OBJECTDIR}/crc8.o.d" -MT ${OBJECTDIR}/crc8.o -o ${OBJECTDIR}/crc8.o crc8.c 
 	
 endif
 

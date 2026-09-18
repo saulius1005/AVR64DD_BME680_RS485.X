@@ -11,9 +11,11 @@
 #ifdef	__cplusplus
 extern "C" {
 #endif
+    
+#define F_CPU 24000000UL //cpu speed
 
-void CLOCK_INHF_clock_init();
-void CLOCK_XOSCHF_clock_init();
+void CLOCK_INHF_clock_init(); //internal cpu clock settings
+void CLOCK_XOSCHF_clock_init(); //external cpu clock settings
 
 #ifdef	__cplusplus
 }

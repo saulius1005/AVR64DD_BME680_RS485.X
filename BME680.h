@@ -94,27 +94,6 @@ typedef enum {
     Filter_coef_127, //7
 }BME680_filter_t;
 
-typedef enum {
-    multiplication_factor_x1 = 0,
-    multiplication_factor_x4,
-    multiplication_factor_x16,
-    multiplication_factor_x64,
-}BME680_gas_wait_t;
-
-typedef enum {
-    heater_set_point_0 = 0,
-    heater_set_point_1,    
-    heater_set_point_2, 
-    heater_set_point_3, 
-    heater_set_point_4, 
-    heater_set_point_5, 
-    heater_set_point_6, 
-    heater_set_point_7, 
-    heater_set_point_8,            
-    heater_set_point_9,       
-}BME680_nb_conv_t;
-    
-
 typedef struct {
     uint8_t filter; //IIR filter settings
     bool spi_3w_en; //enable SPI 3 wire mode
@@ -130,26 +109,6 @@ typedef struct {
     bool spi_3w_init_en; //interrupt enable for new data
     uint8_t osrs_h; //humid oversampling
 } BME680_Ctrl_hum_t;
-
-typedef struct {
-    bool run_gas;
-    uint8_t nb_conv;
-    bool heat_off;
-} BME680_Ctrl_gas_t;
-
-typedef struct {
-    uint16_t gas_r_90;
-    bool gas_valid_r;
-    bool heat_stab_r;
-    uint8_t gas_range_r;
-} BME680_gas_r_t;
-
-typedef struct {
-    bool new_data_0;
-    bool gas_measuring;
-    bool measuring;
-    uint8_t gas_maes_index_0;    
-} BME680_eas_status_0_t;
 
 typedef struct {
     uint16_t  par_t1;
@@ -180,12 +139,6 @@ typedef struct {
     int8_t  par_h7;
     
     bool hum_calib_received;
-
-    int32_t  par_g1;
-    int32_t  par_g2;
-    int32_t  par_g3;
-    
-    bool gas_calib_received;
     
 } BME680_CalibData_t;
        
@@ -195,7 +148,6 @@ typedef struct {
     BME680_Config_t Config;
     BME680_Ctrl_meas_t Ctrl_meas; 
     BME680_Ctrl_hum_t Ctrl_hum;
-    BME680_Ctrl_gas_t Ctrl_gas;
 
     uint16_t hum;    
     int32_t temp;   

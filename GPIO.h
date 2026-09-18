@@ -12,8 +12,7 @@
 extern "C" {
 #endif
 
-void GPIO_init();
-
+void GPIO_init(); //i/o settings
 
 #ifdef	__cplusplus
 }
