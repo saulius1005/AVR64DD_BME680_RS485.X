@@ -1296,20 +1296,20 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x24fb0
+.debug_info     0x0000000000000000    0x24fac
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x2057 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped/crtavr64dd32.o
  .debug_info    0x0000000000002057     0x8585 build/default/production/BME680.o
  .debug_info    0x000000000000a5dc     0x7a61 build/default/production/main.o
  .debug_info    0x000000000001203d      0x45d build/default/production/SPI.o
- .debug_info    0x000000000001249a      0x8c7 build/default/production/USART.o
- .debug_info    0x0000000000012d61      0x90b build/default/production/CLK.o
- .debug_info    0x000000000001366c      0x7cd build/default/production/GPIO.o
- .debug_info    0x0000000000013e39     0x8175 build/default/production/ADC.o
- .debug_info    0x000000000001bfae      0x789 build/default/production/RTC.o
- .debug_info    0x000000000001c737      0xab0 build/default/production/RS485.o
- .debug_info    0x000000000001d1e7     0x7d05 build/default/production/crc8.o
- .debug_info    0x0000000000024eec       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
+ .debug_info    0x000000000001249a      0x8c3 build/default/production/USART.o
+ .debug_info    0x0000000000012d5d      0x90b build/default/production/CLK.o
+ .debug_info    0x0000000000013668      0x7cd build/default/production/GPIO.o
+ .debug_info    0x0000000000013e35     0x8175 build/default/production/ADC.o
+ .debug_info    0x000000000001bfaa      0x789 build/default/production/RTC.o
+ .debug_info    0x000000000001c733      0xab0 build/default/production/RS485.o
+ .debug_info    0x000000000001d1e3     0x7d05 build/default/production/crc8.o
+ .debug_info    0x0000000000024ee8       0xc4 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
 .debug_abbrev   0x0000000000000000     0x2ac4
  *(.debug_abbrev)
@@ -1341,18 +1341,18 @@ END GROUP
  .debug_line    0x00000000000012ab      0x17e build/default/production/crc8.o
  .debug_line    0x0000000000001429       0x6d C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega2/memx-const/mapped\libavr64dd32.a(ccp_write.o)
 
-.debug_frame    0x0000000000000000      0x534
+.debug_frame    0x0000000000000000      0x530
  *(.debug_frame)
  .debug_frame   0x0000000000000000      0x298 build/default/production/BME680.o
  .debug_frame   0x0000000000000298       0x24 build/default/production/main.o
  .debug_frame   0x00000000000002bc       0x34 build/default/production/SPI.o
- .debug_frame   0x00000000000002f0       0x98 build/default/production/USART.o
- .debug_frame   0x0000000000000388       0x34 build/default/production/CLK.o
- .debug_frame   0x00000000000003bc       0x24 build/default/production/GPIO.o
- .debug_frame   0x00000000000003e0       0x84 build/default/production/ADC.o
- .debug_frame   0x0000000000000464       0x34 build/default/production/RTC.o
- .debug_frame   0x0000000000000498       0x58 build/default/production/RS485.o
- .debug_frame   0x00000000000004f0       0x44 build/default/production/crc8.o
+ .debug_frame   0x00000000000002f0       0x94 build/default/production/USART.o
+ .debug_frame   0x0000000000000384       0x34 build/default/production/CLK.o
+ .debug_frame   0x00000000000003b8       0x24 build/default/production/GPIO.o
+ .debug_frame   0x00000000000003dc       0x84 build/default/production/ADC.o
+ .debug_frame   0x0000000000000460       0x34 build/default/production/RTC.o
+ .debug_frame   0x0000000000000494       0x58 build/default/production/RS485.o
+ .debug_frame   0x00000000000004ec       0x44 build/default/production/crc8.o
 
 .debug_str      0x0000000000000000      0xed8
  *(.debug_str)
@@ -1368,14 +1368,14 @@ END GROUP
  .debug_str     0x0000000000000ebf       0x19 build/default/production/RS485.o
  .debug_str     0x0000000000000ed8        0x0 build/default/production/crc8.o
 
-.debug_loc      0x0000000000000000     0x1085
+.debug_loc      0x0000000000000000     0x1083
  *(.debug_loc)
  .debug_loc     0x0000000000000000      0xc89 build/default/production/BME680.o
  .debug_loc     0x0000000000000c89       0x2e build/default/production/SPI.o
- .debug_loc     0x0000000000000cb7       0xa8 build/default/production/USART.o
- .debug_loc     0x0000000000000d5f      0x182 build/default/production/ADC.o
- .debug_loc     0x0000000000000ee1       0x36 build/default/production/RTC.o
- .debug_loc     0x0000000000000f17      0x16e build/default/production/crc8.o
+ .debug_loc     0x0000000000000cb7       0xa6 build/default/production/USART.o
+ .debug_loc     0x0000000000000d5d      0x182 build/default/production/ADC.o
+ .debug_loc     0x0000000000000edf       0x36 build/default/production/RTC.o
+ .debug_loc     0x0000000000000f15      0x16e build/default/production/crc8.o
 
 .debug_macinfo
  *(.debug_macinfo)

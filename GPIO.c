@@ -3,7 +3,7 @@
 void GPIO_init(){
     
 
-    PORTA.DIRSET = PIN1_bm | PIN2_bm | PIN3_bm | PIN4_bm | PIN7_bm; //out: SPI_SS, RS485_TX_LED, RS485_RX_LED, RS485_TX, RS485_XDIR
+    PORTA.DIRSET = PIN2_bm | PIN3_bm | PIN4_bm | PIN7_bm; //out: RS485_TX_LED, RS485_RX_LED, RS485_TX, RS485_XDIR
     
     PORTA.DIRCLR = PIN5_bm; //in: RS485_RX
     
@@ -13,7 +13,7 @@ void GPIO_init(){
     PORTC.PIN3CTRL = PORT_ISC_INPUT_DISABLE_gc; //SLS AIN31
 
 
-    PORTD.DIRSET = PIN4_bm | PIN6_bm; //out SPI_MOSI, SPI_SCK
+    PORTD.DIRSET = PIN4_bm | PIN6_bm | PIN7_bm; //out SPI_SS, SPI_MOSI, SPI_SCK
     PORTD.DIRCLR = PIN5_bm; //in: SPI_MISO
     
     PORTD.OUTCLR = PIN4_bm; //MOSI LOW

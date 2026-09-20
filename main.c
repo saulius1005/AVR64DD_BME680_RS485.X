@@ -11,7 +11,7 @@ int main() {
     RTC_ON(1000); //set update time to one second
             
     while(1){
-        
+        //data collecting , computing and send took about 210ms (active time)
         if (RTC.INTFLAGS & RTC_OVF_bm){ // once time is end (Led will glow about ~2ms) 
             RTC.INTFLAGS = RTC_OVF_bm; //clear flag
             TX_LED_ON(); //turn on tx led

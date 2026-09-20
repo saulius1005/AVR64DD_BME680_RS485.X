@@ -12,8 +12,8 @@
 extern "C" {
 #endif
     
-#define BME680_CS_LOW()    (PORTA.OUTCLR = PIN1_bm) // CS LOW
-#define BME680_CS_HIGH()   (PORTA.OUTSET = PIN1_bm) // CS HIGH
+#define BME680_CS_LOW()    (PORTD.OUTCLR = PIN7_bm) // CS LOW
+#define BME680_CS_HIGH()   (PORTD.OUTSET = PIN7_bm) // CS HIGH
     
 #define status_ADD 0x73
 #define Reset_ADD 0x60
