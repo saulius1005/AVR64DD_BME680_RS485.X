@@ -12,11 +12,11 @@
 extern "C" {
 #endif
     
-#define RX_LED_ON()    (PORTA.OUTSET = PIN3_bm)
-#define RX_LED_OFF()    (PORTA.OUTCLR = PIN3_bm)
+#define RX_LED_ON()    (PORTA.OUTCLR = PIN3_bm)
+#define RX_LED_OFF()    (PORTA.OUTSET = PIN3_bm)
     
-#define TX_LED_ON()    (PORTA.OUTSET = PIN2_bm)
-#define TX_LED_OFF()    (PORTA.OUTCLR = PIN2_bm) 
+#define TX_LED_ON()    (PORTA.OUTCLR = PIN2_bm)
+#define TX_LED_OFF()    (PORTA.OUTSET = PIN2_bm) 
 
 void RS485_TX(); //data send to weather station function   
     
