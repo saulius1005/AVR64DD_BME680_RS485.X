@@ -8,8 +8,6 @@
 #ifndef BME680VAR_H
 #define	BME680VAR_H
 
-#include "BME680.h"
-
 
 #ifdef	__cplusplus
 extern "C" {

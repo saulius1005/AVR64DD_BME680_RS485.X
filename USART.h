@@ -16,6 +16,7 @@ extern "C" {
     
 void USART0_init(); //usart initialization settings
 void USART0_printf(const char *format, ...); //text formating and its sending through uart
+char USART0_readChar(); //reads one char symbol
 
 #ifdef	__cplusplus
 }

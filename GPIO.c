@@ -22,6 +22,9 @@ void GPIO_init(){
     
     PORTA.OUTSET = PIN1_bm | PIN2_bm | PIN3_bm;//ss high, TX RX LED are off
     
+    PORTA.PIN4CTRL = PORT_PULLUPEN_bm;//tx high
+    PORTA.PIN5CTRL = PORT_PULLUPEN_bm;//te high
+    PORTA.PIN7CTRL = PORT_PULLUPEN_bm;//rx high
     
     
     PORTMUX.USARTROUTEA = PORTMUX_USART0_ALT1_gc;//use alt1 pa4, pa5, pa6, pa7
