@@ -25,7 +25,7 @@ char USART0_readChar(){ //but still i keep it
 }
 
 void USART0_printf(const char *format, ...) {
-	char buffer[30]; // Temporary buffer for formatted message
+	char buffer[21]; // Temporary buffer for formatted message
 	va_list args;
 	va_start(args, format);
 	vsnprintf(buffer, sizeof(buffer), format, args); // Format the message into the buffer

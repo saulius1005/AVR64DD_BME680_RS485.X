@@ -32,7 +32,6 @@ extern "C" {
 #include "SPI.h"
 #include "BME680.h"
 #include "ADC.h"
-#include "RTC.h"
 #include "RS485.h"
 #include "crc8.h"
 

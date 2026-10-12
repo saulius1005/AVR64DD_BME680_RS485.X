@@ -12,13 +12,16 @@ void RS485_TX() {
         (uint16_t)ADC0_sensors[SLS_ch]->result,
         (uint8_t)crc_packer()
     );
+    
+    //USART0_printf("[1804023e0b0707e88d]"); //for debugging
 }
 
 void measure_all_data(){
     //data collecting , computing and send took about 210ms (active time)
-    TX_LED_ON(); //turn on tx led
+
     ADC_read_ws_wd_sl(); //measure analog sensors data (Wind speed, direction and light level)
     BME680_read_t_p_rh(); //measure bme680 temperature, pressure and humidity
+    TX_LED_ON(); //turn on tx led    
     RS485_TX(); //send all data to weather station
     TX_LED_OFF(); // turn off TX led
 }
