@@ -1,6 +1,9 @@
 # Sensors Board for Weather Station v2.0
 
-*(No image yet — work in progress)*
+<img width="640" height="360" alt="viber_image_2026-10-24_22-20-07-354" src="https://github.com/user-attachments/assets/6eaccb45-8bc4-487b-917c-b57ccc061f36" />
+<img width="640" height="360" alt="viber_image_2026-10-24_22-20-07-453" src="https://github.com/user-attachments/assets/69da3a6a-b5bc-4fcb-9202-585269bab4f4" />
+<img width="640" height="360" alt="viber_image_2026-10-24_22-20-07-469" src="https://github.com/user-attachments/assets/d3728a16-8031-44d2-bcd8-04a8d581c8c7" />
+
 
 This board is part of a dual-axis solar tracking system and is used as part of the weather station. Its purpose is to:
 
@@ -23,6 +26,15 @@ This board is part of a dual-axis solar tracking system and is used as part of t
 # AVR32DD20 — Work Explanation
 
 ## BME680
+
+<img width="640" height="480" alt="Ekrano kopija 2026-10-24 222719" src="https://github.com/user-attachments/assets/aed02029-273f-4ad1-9266-f0bbbadd3a17" />
+
+<img width="640" height="480" alt="Ekrano kopija 2026-10-24 222733" src="https://github.com/user-attachments/assets/cc1cc25d-c1ed-423d-bbf2-adf8f9c8ef77" />
+
+### Wiring Diagram
+
+<img width="640" height="480" alt="bme680_sensor" src="https://github.com/user-attachments/assets/9e1b1c15-7c60-4631-9826-2a2eba5c0123" />
+
 
 The BME680 sensor is connected via SPI. The SPI clock runs at 6 MHz (24 MHz / 4 = 6 MHz):
 
