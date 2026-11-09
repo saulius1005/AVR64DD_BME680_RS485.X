@@ -1,6 +1,6 @@
 # Attention: This is an older version of the AVR32DD20-BME68-RS485 project, which was used before I obtained the correct MCU (AVR32DD20). The AVR64DD32 was used for debugging purposes.
 
-## The current version is available here: [AVR32DD20-BME68-RS485](https://github.com/saulius1005/AVR32DD20-BME68-RS485)
+## The current version is available here: [AVR32DD20-BME68-RS485](https://github.com/saulius1005/AVR32DD20-BME680-RS485.X.git)
 
 
 
