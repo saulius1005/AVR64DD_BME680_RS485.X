@@ -1,3 +1,10 @@
+# Attention: This is an older version of the AVR32DD20-BME68-RS485 project, which was used before I obtained the correct MCU (AVR32DD20). The AVR64DD32 was used for debugging purposes.
+
+## The current version is available here: [AVR32DD20-BME68-RS485](https://github.com/saulius1005/AVR32DD20-BME68-RS485)
+
+
+
+
 # Sensors Board for Weather Station v2.0
 
 <img width="640" height="360" alt="viber_image_2026-10-24_22-20-07-354" src="https://github.com/user-attachments/assets/6eaccb45-8bc4-487b-917c-b57ccc061f36" />
